@@ -12,3 +12,4 @@ while numCorrect<5:
         numCorrect+=1
     else:
         print("Wrong, the Answer is ",num1+num2)
+print("Good Job!")
