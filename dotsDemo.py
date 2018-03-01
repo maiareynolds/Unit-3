@@ -3,11 +3,13 @@
 #dotsDemo.py - dots on screen
 
 from ggame import *
-blue=Color(0x6495ED,1)
-dot=CircleAsset(5,LineStyle(1,blue),blue)
 
-for i in range(39): #row
-    for j in range(20):
-        Sprite(dot,(25+25*i,25+25*j))
+radius=5
+blue=Color(0x6495ED,1)
+dot=CircleAsset(radius,LineStyle(1,blue),blue)
+
+for i in range(8*radius-1): #row
+    for j in range(4*radius):
+        Sprite(dot,(radius**2+radius**2*i,radius**2+radius**2*j))
 
 App().run()
