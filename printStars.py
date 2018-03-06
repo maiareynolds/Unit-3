@@ -4,5 +4,5 @@
 
 i=1
 while i<=25:
-    print(" "*(25-i),"*"*i)
+    print("*"*i)
     i+=1
